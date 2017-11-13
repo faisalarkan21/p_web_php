@@ -94,7 +94,7 @@ if(isset($_POST['submitKomputer'])) {
                 <label class="non-blue" id="labelTouch" for="touchId">Fitur monitor touchscreen (optional) ?</label>
                 <br/>
                 <br/>
-                <input readonly name="submitKomputer" class="btn btn-primary btn-tambah" value="Pesan Komputer Sekarang" onClick="cekValidasi()"/>
+                <input readonly name="submitKomputer" class="btn btn-primary btn-tambah" value="Pesan Komputer" onClick="cekValidasi()"/>
         </FORM>
         <br/>
         <br/>
