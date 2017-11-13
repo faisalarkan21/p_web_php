@@ -116,8 +116,10 @@ while($res = mysqli_fetch_array($result))
                     <label class="non-blue" id="labelTouch" for="touchId">Fitur monitor touchscreen (optional) ?</label>
                     <br/>
                     <br/>
-                    <input type="submit" name="update-order" class="btn btn-primary btn-tambah" VALUE="Pesan Komputer Sekarang" onClick="cekValidasi()"
+                    <input readonly name="update-order" class="btn btn-primary btn-tambah" VALUE="Update Data Order" onClick="cekValidasi()"
                     />           
+                
+       
             <br/>
             <br/>
             <br/>
@@ -176,7 +178,8 @@ while($res = mysqli_fetch_array($result))
             return false;
         } 
 
-        alert("Update Diterima 😉 ");
-        return true;
+        if (elementForm) {
+            elementForm.submit();
+        }
     }
 </script>

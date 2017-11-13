@@ -57,28 +57,3 @@ $result = mysqli_query($mysqli, "SELECT * FROM list_komputer");
 </body>
 
 </html>
-<script type="text/javascript">
-    function cekValidasi() {
-
-        var elementForm = document.forms["form-rakit"];
-
-        let checked = document.getElementsByName("touch");
-        console.log(checked[0].checked);
-
-        if (elementForm[0].value === '') {
-            alert("Isi Tipe VGA dengan benar! 😑");
-            return false;
-        } else if (elementForm[1].value === '') {
-            alert("Isi Tipe hardisk dengan benar! 😣");
-            return false;
-        } else if (elementForm["prosesor"].value === '') {
-            alert("Isi Tipe Prosesor dengan benar! 😩");
-            return false;
-        } else if (elementForm[5].value === '') {
-            alert("Isi Memory ram dengan benar! 😫");
-            return false;
-        } 
-        alert("Terima kasih Pesanan Diterima 😉 ");
-        return true;
-    }
-</script>

@@ -94,8 +94,7 @@ if(isset($_POST['submitKomputer'])) {
                 <label class="non-blue" id="labelTouch" for="touchId">Fitur monitor touchscreen (optional) ?</label>
                 <br/>
                 <br/>
-                <input type="submit" name="submitKomputer" class="btn btn-primary btn-tambah" VALUE="Pesan Komputer Sekarang" onClick="cekValidasi()"
-                />
+                <input readonly name="submitKomputer" class="btn btn-primary btn-tambah" value="Pesan Komputer Sekarang" onClick="cekValidasi()"/>
         </FORM>
         <br/>
         <br/>
@@ -110,3 +109,33 @@ if(isset($_POST['submitKomputer'])) {
 <br/>
 </body>
 </html>
+
+<script type="text/javascript">
+    function cekValidasi() {
+
+        var elementForm = document.forms["form-rakit"];
+
+        let checked = document.getElementsByName("touch");
+        console.log(checked[0].checked);
+
+        if (elementForm[0].value === '') {
+            alert("Isi Tipe VGA dengan benar! 😑");
+            return false;
+        } else if (elementForm[1].value === '') {
+            alert("Isi Tipe hardisk dengan benar! 😣");
+            return false;
+        } else if (elementForm["prosesor"].value === '') {
+            alert("Isi Tipe Prosesor dengan benar! 😩");
+            return false;
+        } else if (elementForm[5].value === '') {
+            alert("Isi Memory ram dengan benar! 😫");
+            return false;
+        }
+        
+
+        if (elementForm) {
+            elementForm.submit();
+        }
+
+    }
+</script>
