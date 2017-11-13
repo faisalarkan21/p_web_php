@@ -21,8 +21,6 @@ if(isset($_POST['submitKomputer'])) {
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,7 +96,6 @@ if(isset($_POST['submitKomputer'])) {
                 <br/>
                 <input type="submit" name="submitKomputer" class="btn btn-primary btn-tambah" VALUE="Pesan Komputer Sekarang" onClick="cekValidasi()"
                 />
-
         </FORM>
         <br/>
         <br/>
@@ -108,7 +105,6 @@ if(isset($_POST['submitKomputer'])) {
     </div>
 </div>
 <br/>
-
 <br/>
 <br/>
 <br/>

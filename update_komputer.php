@@ -1,12 +1,8 @@
 <?php
 
 include_once("config.php");
-
-
-
 if(isset($_POST['update-order']))
-{   
-    
+{       
     $id = $_GET['id_order'];
     $merkVGA =  $_POST['merkVGA'];
 	$tipeHardisk =  $_POST['tipeHardisk'];
@@ -46,7 +42,6 @@ while($res = mysqli_fetch_array($result))
 }
 
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -122,9 +117,7 @@ while($res = mysqli_fetch_array($result))
                     <br/>
                     <br/>
                     <input type="submit" name="update-order" class="btn btn-primary btn-tambah" VALUE="Pesan Komputer Sekarang" onClick="cekValidasi()"
-                    />
-
-            </FORM>
+                    />           
             <br/>
             <br/>
             <br/>
@@ -149,25 +142,18 @@ while($res = mysqli_fetch_array($result))
     var prosesor3 = document.getElementById('prosesorChoice3');
 
     if ( prosesor1.value === '<?php echo $prosesor ?>'){
-
         prosesor1.checked = true;
-
     } else if ( prosesor2.value === '<?php echo $prosesor ?>'){
-
         prosesor2.checked = true;
-
     }
     else if ( prosesor3.value === '<?php echo $prosesor ?>'){
-
         prosesor3.checked = true;
-
     }
 
     var touchScreen = document.getElementById('touchId');
     if ('Ya' === '<?php echo $touchscreen ?>'){
         touchScreen.checked = true;
     }
-
 
     function cekValidasi() {
 
@@ -192,7 +178,5 @@ while($res = mysqli_fetch_array($result))
 
         alert("Update Diterima 😉 ");
         return true;
-
-
     }
 </script>

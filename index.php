@@ -4,8 +4,6 @@ include_once("config.php");
 
 $result = mysqli_query($mysqli, "SELECT * FROM list_komputer"); 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
