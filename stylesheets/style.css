@@ -130,7 +130,7 @@ body {
   }
   
   h3.tableTitle {
-    font-size: 35px;
+    font-size: 50px;
     color: #0288D1;
   }
   
@@ -250,6 +250,8 @@ body {
 .btn-tambah-table {
   margin-left: 10px;
   margin-top: 20px;
+  padding: 10px;
+  font-size: 15px;
  
 }
 
