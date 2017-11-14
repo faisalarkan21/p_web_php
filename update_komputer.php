@@ -1,5 +1,4 @@
 <?php
-
 include_once("config.php");
 if(isset($_POST['update-order']))
 {       
@@ -25,9 +24,8 @@ if(isset($_POST['update-order']))
     }   
 }
 ?>
-
+  <!-- 4. Faisal Arkan -->
 <?php
-
 $id = $_GET['id_order'];
 
 $result = mysqli_query($mysqli, "SELECT * FROM list_komputer WHERE id_order=$id");
@@ -40,7 +38,6 @@ while($res = mysqli_fetch_array($result))
     $ram = $res['t_ram'];
     $touchscreen = $res['is_touchscreen'];
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,6 +80,7 @@ while($res = mysqli_fetch_array($result))
                         <b>Tipe Hardisk : </b>
                     </label>
                     <br/>
+                    <!-- 5. Fajri  -->
                     <input class="text_input" placeholder="Contoh HDD 500 GB" value="<?php echo $hardisk ?>" type="text" name="tipeHardisk">
                     <br/>
                     <br/>
@@ -117,9 +115,7 @@ while($res = mysqli_fetch_array($result))
                     <br/>
                     <br/>
                     <input readonly name="update-order" class="btn btn-primary btn-tambah" VALUE="Update Data Order" onClick="cekValidasi()"
-                    />           
-                
-       
+                    />                             
             <br/>
             <br/>
             <br/>

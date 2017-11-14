@@ -1,3 +1,4 @@
+<!-- 1. Alosius -->
 <?php
 
 include_once("config.php");
@@ -80,6 +81,7 @@ if(isset($_POST['submitKomputer'])) {
                 <input type="radio" id="prosesorChoice3" name="prosesor" value="7th Generation Intel Core i7-7500U">
                 <label class="non-blue" for="prosesorChoice3">7th Generation Intel® Core™ i7-7500U</label>
                 <br/>
+                <!-- 2. Agung -->
                 <br/>
                 <br/>
                 <label class="inputLabel" for="">
@@ -95,7 +97,6 @@ if(isset($_POST['submitKomputer'])) {
                 <br/>
                 <br/>
                 <input readonly name="submitKomputer" class="btn btn-primary btn-tambah" value="Pesan Komputer" onClick="cekValidasi()"/>
-        </FORM>
         <br/>
         <br/>
         <br/>
@@ -109,12 +110,10 @@ if(isset($_POST['submitKomputer'])) {
 <br/>
 </body>
 </html>
-
 <script type="text/javascript">
     function cekValidasi() {
 
         var elementForm = document.forms["form-rakit"];
-
         let checked = document.getElementsByName("touch");
         console.log(checked[0].checked);
 
@@ -132,7 +131,6 @@ if(isset($_POST['submitKomputer'])) {
             return false;
         }
         
-
         if (elementForm) {
             elementForm.submit();
         }
